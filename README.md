@@ -37,9 +37,12 @@ A website application called **MisterMenu**, a digital solution for connecting r
 | ------- | ------------------- | ----------------------- |
 | Abdehi  | Front End Developer | TBC                     |
 | Jeffry  | Front End Developer | TBC                     |
-| Benhard | Front End Developer | TBC                     |
+| Bernhard| Front End Developer | TBC                     |
 
 <br>
+
+## Issues
+<https://github.com/mistermenu/mistermenu/issues/1>
 
 ## Tech Stack
 
