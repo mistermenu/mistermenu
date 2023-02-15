@@ -2,13 +2,33 @@
 
 A website application called **MisterMenu**, a digital solution for connecting restaurants and customers.
 
+<details open>
+<summary> Table of Contents </summary>
+
+- [Demo](#demo)
+- [Our Design](#our-design)
+- [Contributors](#contributors)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+  - [Commands](#commands)
+  - [Deploy](#deploy)
+- [License](#license)
+
+</details>
+
+---
+
 ## Demo
 
 [mistermenu.netlify.app](https://mistermenu.netlify.app)
 
+---
+
 ## Our Design
 
 - Figma: [@mistermenu/figma](https://www.figma.com/file/2SdSvMCEHYpdLNhveIYgjd/mistermenu?t=uede3SWDEUa5vYJL-0)
+
+---
 
 ## Contributors
 
@@ -21,23 +41,28 @@ A website application called **MisterMenu**, a digital solution for connecting r
 | Jeffry  | Front End Developer | TBC                     |
 | Benhard | Front End Developer | TBC                     |
 
+---
+
 ## Tech Stack
 
 - ✅ Integration with **Tailwind CSS** ([@vitejs/tailwind](https://tailwindcss.com/docs/guides/vite))
 - ✅ **Clean Code** with ([@prettier](https://prettier.io/docs/en/install.html)) and ([@ESLint](https://eslint.org/))
 - ✅ JavaScript that scales using **TypeScript** ([@typescript](https://www.typescriptlang.org/docs/handbook/intro.html))
 
+---
+
 ## Getting Started
 
 ### Commands
 
-| Command                 | Action                                       |
-| ----------------------- | -------------------------------------------- |
-| `npm install`           | Install all dependencies                     |
-| `npm run dev`           | Starts local dev server at `localhost:5173`  |
-| `npm run build`         | Build your production site to `./dist`       |
-| `npm run preview`       | Preview your build locally, before deploying |
-| `npx prettier --write . | Format all codes with Prettier               |
+| Command                  | Action                                       |
+| ------------------------ | -------------------------------------------- |
+| `npm install`            | Install all dependencies                     |
+| `npm run dev`            | Starts local dev server at `localhost:5173`  |
+| `npm run build`          | Build your production site to `./dist`       |
+| `npm run preview`        | Preview your build locally, before deploying |
+| `npx prettier --write .` | Format all codes with Prettier               |
+| `npm run lint:eslint`    | Ruun ESLint                                  |
 
 ### Deploy
 
@@ -51,6 +76,8 @@ The resulting files is `./dist` which typically much smaller and faster to load 
 #### Deploy to Netlify
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/mistermenu/mistermenu)
+
+---
 
 ## License
 
