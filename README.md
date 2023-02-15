@@ -43,7 +43,7 @@ A website application called **MisterMenu**, a digital solution for connecting r
 
 ## Issues
 
-[Work Distribution](https://github.com/mistermenu/mistermenu/issues/1)
+1. [Work Distribution](https://github.com/mistermenu/mistermenu/issues/1)
 
 <br>
 
