@@ -46,6 +46,13 @@ A website application called **MisterMenu**, a digital solution for connecting r
 - ✅ Integration with **Tailwind CSS** ([@vitejs/tailwind](https://tailwindcss.com/docs/guides/vite))
 - ✅ **Clean Code** with ([@prettier](https://prettier.io/docs/en/install.html)) and ([@ESLint](https://eslint.org/))
 - ✅ JavaScript that scales using **TypeScript** ([@typescript](https://www.typescriptlang.org/docs/handbook/intro.html))
+- ✅ Component approach project with **React** ([@react](https://create-react-app.dev/docs/getting-started/))
+
+![Prettier](https://img.shields.io/badge/prettier-1A2C34?style=flat-square&logo=prettier&logoColor=F7BA3E)
+![Eslint](https://img.shields.io/badge/eslint-3A33D1?style=flat-square&logo=eslint&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
 <br>
 
