@@ -33,16 +33,19 @@ A website application called **MisterMenu**, a digital solution for connecting r
 - Mister: ...
 - Menu: ...
 
-| Name    | Role                | The Worked Distribution |
-| ------- | ------------------- | ----------------------- |
-| Abdehi  | Front End Developer | TBC                     |
-| Jeffry  | Front End Developer | TBC                     |
-| Bernhard| Front End Developer | TBC                     |
+| Name     | Role                | The Worked Distribution |
+| -------- | ------------------- | ----------------------- |
+| Abdehi   | Front End Developer | TBC                     |
+| Jeffry   | Front End Developer | TBC                     |
+| Bernhard | Front End Developer | TBC                     |
 
 <br>
 
 ## Issues
-<https://github.com/mistermenu/mistermenu/issues/1>
+
+[Work Distribution](https://github.com/mistermenu/mistermenu/issues/1)
+
+<br>
 
 ## Tech Stack
 
