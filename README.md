@@ -20,9 +20,13 @@ A website application called **MisterMenu**, a digital solution for connecting r
 
 [mistermenu.netlify.app](https://mistermenu.netlify.app)
 
+<br>
+
 ## Our Design
 
 - Figma: [@mistermenu/figma](https://www.figma.com/file/2SdSvMCEHYpdLNhveIYgjd/mistermenu?t=uede3SWDEUa5vYJL-0)
+
+<br>
 
 ## Contributors
 
@@ -35,11 +39,15 @@ A website application called **MisterMenu**, a digital solution for connecting r
 | Jeffry  | Front End Developer | TBC                     |
 | Benhard | Front End Developer | TBC                     |
 
+<br>
+
 ## Tech Stack
 
 - ✅ Integration with **Tailwind CSS** ([@vitejs/tailwind](https://tailwindcss.com/docs/guides/vite))
 - ✅ **Clean Code** with ([@prettier](https://prettier.io/docs/en/install.html)) and ([@ESLint](https://eslint.org/))
 - ✅ JavaScript that scales using **TypeScript** ([@typescript](https://www.typescriptlang.org/docs/handbook/intro.html))
+
+<br>
 
 ## Getting Started
 
@@ -66,6 +74,8 @@ The resulting files is `./dist` which typically much smaller and faster to load 
 #### Deploy to Netlify
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/mistermenu/mistermenu)
+
+<br>
 
 ## License
 
