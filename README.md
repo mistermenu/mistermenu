@@ -24,7 +24,7 @@ A website application called **MisterMenu**, a digital solution for connecting r
 
 ## Our Design
 
-- Figma: [@mistermenu/figma](https://www.figma.com/file/2SdSvMCEHYpdLNhveIYgjd/mistermenu?t=uede3SWDEUa5vYJL-0)
+- Figma: [@mistermenu/figma](https://www.figma.com/file/R2vcyMmktVMeFGhRPJpPT9/Mister-Menu)
 
 <br>
 
