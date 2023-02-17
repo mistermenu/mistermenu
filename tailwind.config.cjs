@@ -6,6 +6,9 @@ module.exports = {
     fontFamily: {
       rocksalt: ["Rock Salt", "cursive"],
     },
+    colors: {
+      "red-mistermenu": "#71130B",
+    },
   },
   plugins: [],
 };
