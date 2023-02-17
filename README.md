@@ -32,7 +32,7 @@ A website application called **MisterMenu**, a digital solution for connecting r
 
 ## Our API
 
-- Kontenbase: [@mistermenu/kontenbase](https://api.kontenbase.com/query/api/v1/bbab1d2d-346d-4e0c-a0ca-07082d42df18)
+- Kontenbase: [@mistermenu/kontenbase](https://api.kontenbase.com/query/api/v1/bbab1d2d-346d-4e0c-a0ca-07082d42df18/katalog-makanan)
 
 <br>
 
