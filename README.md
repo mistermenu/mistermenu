@@ -1,6 +1,6 @@
 # 🍽️ MisterMenu
 
-A website application called **MisterMenu**, a digital solution for connecting restaurants and customers.
+A website application called **MisterMenu**, a food menu order for restaurant.
 
 <details open>
 <summary> Table of Contents </summary>
