@@ -52,6 +52,7 @@ A website application called **MisterMenu**, a digital solution for connecting r
 ## Issues
 
 1. [Work Distribution](https://github.com/mistermenu/mistermenu/issues/1)
+2. [Initialize Project Checklist](https://github.com/mistermenu/mistermenu/issues/2)
 
 <br>
 
