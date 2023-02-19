@@ -16,25 +16,17 @@ A website application called **MisterMenu**, a food menu order for restaurant.
 
 </details>
 
-<br>
-
 ## Demo
 
 - Live access at: [mistermenu.netlify.app](https://mistermenu.netlify.app)
-
-<br>
 
 ## Our Design
 
 - Figma: [@mistermenu/figma](https://www.figma.com/file/R2vcyMmktVMeFGhRPJpPT9/Mister-Menu)
 
-<br>
-
 ## Our API
 
 - Kontenbase: [@mistermenu/kontenbase](https://api.kontenbase.com/query/api/v1/bbab1d2d-346d-4e0c-a0ca-07082d42df18/katalog-makanan)
-
-<br>
 
 ## Contributors
 
@@ -47,15 +39,11 @@ A website application called **MisterMenu**, a food menu order for restaurant.
 | Jeffry   | Front End Developer | TBC                     |
 | Bernhard | Front End Developer | TBC                     |
 
-<br>
-
 ## Issues
 
 1. [Work Distribution](https://github.com/mistermenu/mistermenu/issues/1)
 2. [Initialize Project Checklist](https://github.com/mistermenu/mistermenu/issues/2)
 3. [Project Priority](https://github.com/mistermenu/mistermenu/issues/3)
-
-<br>
 
 ## Tech Stack
 
@@ -69,8 +57,6 @@ A website application called **MisterMenu**, a food menu order for restaurant.
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-
-<br>
 
 ## Getting Started
 
@@ -97,8 +83,6 @@ The resulting files is `./dist` which typically much smaller and faster to load 
 #### Deploy to Netlify
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/mistermenu/mistermenu)
-
-<br>
 
 ## License
 
