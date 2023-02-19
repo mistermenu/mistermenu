@@ -24,9 +24,17 @@ A website application called **MisterMenu**, a food menu order for restaurant.
 
 - Figma: [@mistermenu/figma](https://www.figma.com/file/R2vcyMmktVMeFGhRPJpPT9/Mister-Menu)
 
-## Our API
+## REST API
 
-- Kontenbase: [@mistermenu/kontenbase](https://api.kontenbase.com/query/api/v1/bbab1d2d-346d-4e0c-a0ca-07082d42df18/katalog-makanan)
+- Base API URL: [@mistermenu/railway-express-prisma](https://mistermenu-api.up.railway.app)
+
+| HTTP   | Endpoint             | Description              |
+| ------ | -------------------- | ------------------------ |
+| GET    | /products            | Get all products         |
+| GET    | /products/:productId | Get one product by id    |
+| POST   | /products            | Add new product          |
+| DELETE | /products            | Delete all products      |
+| DELETE | /products/:productId | Delete one product by id |
 
 ## Contributors
 
