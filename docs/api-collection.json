@@ -1,0 +1,135 @@
+[
+  {
+    "v": 1,
+    "name": "Contacts",
+    "folders": [],
+    "requests": [
+      {
+        "v": "1",
+        "endpoint": "<<url>>/contacts",
+        "name": "Get all contacts",
+        "params": [],
+        "headers": [],
+        "method": "GET",
+        "auth": {
+          "addTo": "Headers",
+          "authActive": true,
+          "authType": "none",
+          "key": "",
+          "value": ""
+        },
+        "preRequestScript": "",
+        "testScript": "",
+        "body": {
+          "contentType": null,
+          "body": null
+        }
+      },
+      {
+        "v": "1",
+        "endpoint": "<<url>>/contacts/4df3ae71-7661-478e-bd6f-5ad17ecf446",
+        "name": "Get one contact by id",
+        "params": [],
+        "headers": [],
+        "method": "GET",
+        "auth": {
+          "addTo": "Headers",
+          "authActive": true,
+          "authType": "none",
+          "key": "",
+          "value": ""
+        },
+        "preRequestScript": "",
+        "testScript": "",
+        "body": {
+          "contentType": null,
+          "body": null
+        }
+      },
+      {
+        "v": "1",
+        "endpoint": "<<url>>/contacts",
+        "name": "Add new contact",
+        "params": [],
+        "headers": [],
+        "method": "POST",
+        "auth": {
+          "addTo": "Headers",
+          "authActive": true,
+          "authType": "none",
+          "key": "",
+          "value": ""
+        },
+        "preRequestScript": "",
+        "testScript": "",
+        "body": {
+          "contentType": "application/json",
+          "body": "{\n  \"name\": \"Tony Stark\",\n  \"email\": \"tony@stark.com\"\n}"
+        }
+      },
+      {
+        "v": "1",
+        "endpoint": "<<url>>/contacts/4df3ae71-7661-478e-bd6f-5ad17ecf446d",
+        "name": "Delete one contact by id",
+        "params": [],
+        "headers": [],
+        "method": "DELETE",
+        "auth": {
+          "addTo": "Headers",
+          "authActive": true,
+          "authType": "none",
+          "key": "",
+          "value": ""
+        },
+        "preRequestScript": "",
+        "testScript": "",
+        "body": {
+          "contentType": null,
+          "body": null
+        }
+      },
+      {
+        "v": "1",
+        "endpoint": "<<url>>/contacts",
+        "name": "Delete all contacts",
+        "params": [],
+        "headers": [],
+        "method": "DELETE",
+        "auth": {
+          "addTo": "Headers",
+          "authActive": true,
+          "authType": "none",
+          "key": "",
+          "value": ""
+        },
+        "preRequestScript": "",
+        "testScript": "",
+        "body": {
+          "contentType": null,
+          "body": null
+        }
+      },
+      {
+        "v": "1",
+        "endpoint": "<<url>>/contacts",
+        "name": "Add multiple contacts",
+        "params": [],
+        "headers": [],
+        "method": "POST",
+        "auth": {
+          "addTo": "Headers",
+          "authActive": true,
+          "authType": "none",
+          "key": "",
+          "value": ""
+        },
+        "preRequestScript": "",
+        "testScript": "",
+        "body": {
+          "contentType": "application/json",
+          "body": "[]"
+        }
+      }
+    ]
+  }
+]
