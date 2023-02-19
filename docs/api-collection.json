@@ -1,13 +1,13 @@
 [
   {
     "v": 1,
-    "name": "Contacts",
+    "name": "Products",
     "folders": [],
     "requests": [
       {
         "v": "1",
-        "endpoint": "<<url>>/contacts",
-        "name": "Get all contacts",
+        "endpoint": "<<url>>/products",
+        "name": "Get all products",
         "params": [],
         "headers": [],
         "method": "GET",
@@ -27,8 +27,8 @@
       },
       {
         "v": "1",
-        "endpoint": "<<url>>/contacts/4df3ae71-7661-478e-bd6f-5ad17ecf446",
-        "name": "Get one contact by id",
+        "endpoint": "<<url>>/products/4df3ae71-7661-478e-bd6f-5ad17ecf446",
+        "name": "Get one product by id",
         "params": [],
         "headers": [],
         "method": "GET",
@@ -48,8 +48,8 @@
       },
       {
         "v": "1",
-        "endpoint": "<<url>>/contacts",
-        "name": "Add new contact",
+        "endpoint": "<<url>>/products",
+        "name": "Add new product",
         "params": [],
         "headers": [],
         "method": "POST",
@@ -69,8 +69,8 @@
       },
       {
         "v": "1",
-        "endpoint": "<<url>>/contacts/4df3ae71-7661-478e-bd6f-5ad17ecf446d",
-        "name": "Delete one contact by id",
+        "endpoint": "<<url>>/products/4df3ae71-7661-478e-bd6f-5ad17ecf446d",
+        "name": "Delete one product by id",
         "params": [],
         "headers": [],
         "method": "DELETE",
@@ -90,8 +90,8 @@
       },
       {
         "v": "1",
-        "endpoint": "<<url>>/contacts",
-        "name": "Delete all contacts",
+        "endpoint": "<<url>>/products",
+        "name": "Delete all products",
         "params": [],
         "headers": [],
         "method": "DELETE",
@@ -111,8 +111,8 @@
       },
       {
         "v": "1",
-        "endpoint": "<<url>>/contacts",
-        "name": "Add multiple contacts",
+        "endpoint": "<<url>>/products",
+        "name": "Add multiple products",
         "params": [],
         "headers": [],
         "method": "POST",
