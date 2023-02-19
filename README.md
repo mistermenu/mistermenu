@@ -56,15 +56,25 @@ A website application called **MisterMenu**, a food menu order for restaurant.
 ## Tech Stack
 
 - ✅ Integration with **Tailwind CSS** ([@vitejs/tailwind](https://tailwindcss.com/docs/guides/vite))
+  - PostCSS
+  - Autoprefixer
 - ✅ **Clean Code** with ([@prettier](https://prettier.io/docs/en/install.html)) and ([@ESLint](https://eslint.org/))
+  - Prettier Plugin Tailwind CSS
 - ✅ JavaScript that scales using **TypeScript** ([@typescript](https://www.typescriptlang.org/docs/handbook/intro.html))
-- ✅ Component approach project with **React** ([@react](https://create-react-app.dev/docs/getting-started/))
+- ✅ Component approach project with **React v18** ([@react](https://create-react-app.dev/docs/getting-started/))
+  - React DOM v18
+- ✅ Frontend Framework with **Vite**([@vite](https://vitejs.dev/guide/))
+- ✅ REST API made with **Railway-ExpressJS-Prisma** thanks to mentor [@mhaidarhanif](https://github.com/mhaidarhanif)
 
 ![Prettier](https://img.shields.io/badge/prettier-1A2C34?style=for-the-badge&logo=prettier&logoColor=F7BA3E)
 ![Eslint](https://img.shields.io/badge/eslint-3A33D1?style=for-the-badge&logo=eslint&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
+![ExpressJS]([https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white])
+![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)
+![Railway](https://img.shields.io/badge/Railway-131415?style=for-the-badge&logo=railway&logoColor=white)
 
 ## Getting Started
 
