@@ -33,11 +33,11 @@ A website application called **MisterMenu**, a food menu order for restaurant.
 - Mister: ...
 - Menu: ...
 
-| Name     | Role                | The Worked Distribution |
-| -------- | ------------------- | ----------------------- |
-| Abdehi   | Front End Developer | TBC                     |
-| Jeffry   | Front End Developer | TBC                     |
-| Bernhard | Front End Developer | TBC                     |
+| Name     | Role                | The Worked Distribution                  | Deployment                                                   |
+| -------- | ------------------- | ---------------------------------------- | ------------------------------------------------------------ |
+| Abdehi   | Front End Developer | `Front End Developer` & `UI/UX Designer` | [@mistermenu/abdehi](https://mistermenu.abdehi.com)          |
+| Jeffry   | Front End Developer | `Front End Developer` & `UI/UX Designer` | [@mistermenu/jeffry](https://mistermenu.jeffrymahbuubi.com)  |
+| Bernhard | Front End Developer | `Front End Developer` & `UI/UX Designer` | [@mistermenu/benhard](https://mistermenu.benhardhustomo.com) |
 
 ## Issues
 
