@@ -25,3 +25,11 @@ export async function apiGetProductsById(productsId: ResourceProduct["id"]) {
   const products: ResourceProducts = response.data;
   return products;
 }
+
+export async function apiGetProductImageById(
+  productImageId: ResourceProduct["image"]
+) {
+  const response = await axiosInstance.get(`products/${productImageId}`);
+  const products: ResourceProducts = response.data;
+  return products;
+}
