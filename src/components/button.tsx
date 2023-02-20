@@ -15,7 +15,7 @@ export function Counter() {
   return (
     <div>
       <p>
-        <apiGetProductImageById />: {counter}
+        <apiGetProductsById />: {counter}
       </p>
       <button onClick={increment} className="bg-teal-500 p-2">
         +
