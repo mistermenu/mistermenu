@@ -1,6 +1,6 @@
 import { useLoaderData } from "react-router-dom";
-
 import { apiGetProducts } from "../api/products";
+import { FaBeer } from "react-icons/fa";
 
 export async function loader() {
   const products = await apiGetProducts();
