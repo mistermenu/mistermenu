@@ -15,7 +15,7 @@ export function RecommendationRoute() {
   return (
     <div>
       <ul className="flex flex-wrap"></ul>
-      <li>
+      <li className="list-none">
         <Cards />
         <Cards />
         <Cards />
