@@ -14,8 +14,9 @@ export function HeaderNavigation() {
         <div className=" w-36 rounded-sm  border-[3px] border-gray-200 bg-white text-center shadow-2xl hover:border-red-200 hover:bg-red-200">
           <Link to="/recomendation">
             <img className="p-3" src="/assets/images/Rekomendasi.png" alt="" />
+
             <h1 className="text-sm font-semibold text-gray-600">
-              RECOMENDATION
+              RECOMMENDATION
             </h1>
           </Link>
         </div>
@@ -26,6 +27,7 @@ export function HeaderNavigation() {
           </Link>
         </div>
         <div className=" w-36 rounded-sm  border-[3px] border-gray-200 bg-white text-center shadow-2xl hover:border-red-200 hover:bg-red-200">
+
           <Link to="/porridge">
             <img className="p-3" src="/assets/images/BUBUR.png" alt="" />
             <h1 className="text-sm font-semibold text-gray-600">PORRIDGE</h1>
@@ -33,6 +35,7 @@ export function HeaderNavigation() {
         </div>
         <div className=" w-36 rounded-sm  border-[3px] border-gray-200 bg-white text-center shadow-2xl hover:border-red-200 hover:bg-red-200">
           <Link to="/seafood">
+
             <img className="p-3" src="/assets/images/SEAFOOD.png" alt="" />
             <h1 className="text-sm font-semibold text-gray-600">SEAFOOD</h1>
           </Link>
