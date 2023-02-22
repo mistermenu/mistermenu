@@ -12,10 +12,12 @@ import { CartRoute, loader as cartLoader } from "./routes/cart";
 import { ChickenRoute } from "./routes/chicken";
 import { DrinkRoute, loader as drinkLoader } from "./routes/drink";
 import { PorridgeRoute } from "./routes/porridge";
-import { RecomendationRoute } from "./routes/recommendation";
+import {
+  RecomendationRoute,
+  loader as recomendationLoader,
+} from "./routes/recommendation";
 import { SeafoodRoute } from "./routes/seafood";
 import { SoupRoute } from "./routes/soup";
-
 
 const router = createBrowserRouter([
   {
@@ -45,6 +47,7 @@ const router = createBrowserRouter([
       {
         path: "/recomendation",
         element: <RecomendationRoute />,
+        loader: recomendationLoader,
       },
       {
         path: "/seafood",
