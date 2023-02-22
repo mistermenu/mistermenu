@@ -1,6 +1,5 @@
-import { FaSpinner } from "react-icons/fa";
-import { useState, useEffect } from "react";
 import { useLoaderData } from "react-router-dom";
+
 import { apiGetProducts } from "../api/products";
 
 export async function loader() {
@@ -10,20 +9,9 @@ export async function loader() {
   );
   return { products: filteredProducts };
 }
+
 export function DrinkRoute() {
   const { products } = useLoaderData() as Awaited<ReturnType<typeof loader>>;
-  const [loading, setLoading] = useState<boolean>(true);
-  useEffect(() => {
-    setLoading(false);
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="flex h-screen items-center justify-center">
-        <FaSpinner className="animate-spin text-4xl" />
-      </div>
-    );
-  }
 
   return (
     <div className="m-6 grid grid-cols-4 gap-6">
