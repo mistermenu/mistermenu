@@ -1,6 +1,6 @@
 # 🍽️ MisterMenu
 
-A website application called **MisterMenu**, a food menu order for restaurant.
+MisterMenu is a web app that is a food menu ordering for restaurant.
 
 <details open>
 <summary> Table of Contents </summary>
@@ -16,9 +16,14 @@ A website application called **MisterMenu**, a food menu order for restaurant.
 
 </details>
 
-## Demo
+## Live URLs
 
-- Live access at: [mistermenu.netlify.app](https://mistermenu.netlify.app)
+Access demo at:
+
+- <https://mistermenu.netlify.app>
+- <https://mistermenu.jeffrymahbuubi.com>
+- <https://mistermenu.bernhard.com>
+- <https://mistermenu.abdehi.com>
 
 ## Our Design
 
