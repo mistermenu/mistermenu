@@ -9,7 +9,7 @@ import { RootRoute } from "./routes/root";
 import { HomeRoute, loader as homeLoader } from "./routes/home";
 import { CartRoute, loader as cartLoader } from "./routes/cart";
 import { ChickenRoute } from "./routes/chicken";
-import { DrinkRoute } from "./routes/drink";
+import { DrinkRoute, loader as drinkLoader } from "./routes/drink";
 import { PorridgeRoute } from "./routes/porridge";
 import { RecomendationRoute } from "./routes/recommendation";
 import { SeafoodRoute } from "./routes/seafood";
@@ -37,6 +37,7 @@ const router = createBrowserRouter([
       {
         path: "/drink",
         element: <DrinkRoute />,
+        loader: drinkLoader,
       },
       {
         path: "/porridge",

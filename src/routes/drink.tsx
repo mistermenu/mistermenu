@@ -1,34 +1,20 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
 import { FaSpinner } from "react-icons/fa";
+import { useState, useEffect } from "react";
+import { useLoaderData } from "react-router-dom";
+import { apiGetProducts } from "../api/products";
 
-type Products = {
-  id: number;
-  name: string;
-  image: string;
-  description: string;
-  price: number;
-  category: string;
-};
-
+export async function loader() {
+  const products = await apiGetProducts();
+  const filteredProducts = products.filter(
+    (product) => product.category === "beverage"
+  );
+  return { products: filteredProducts };
+}
 export function DrinkRoute() {
-  //state
-  const [products, setProducts] = useState<Products[]>([]);
+  const { products } = useLoaderData() as Awaited<ReturnType<typeof loader>>;
   const [loading, setLoading] = useState<boolean>(true);
-
-  //component did mount
   useEffect(() => {
-    async function fetchData() {
-      const response = await axios.get(
-        "https://mistermenu-api.up.railway.app/products"
-      );
-      const baverageProducts = response.data.filter(
-        (product: Products) => product.category === "beverage"
-      );
-      setProducts(baverageProducts);
-      setLoading(false);
-    }
-    fetchData();
+    setLoading(false);
   }, []);
 
   if (loading) {

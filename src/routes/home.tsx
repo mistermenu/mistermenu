@@ -3,10 +3,6 @@ import { apiGetProducts } from "../api/products";
 
 export async function loader() {
   const products = await apiGetProducts();
-  // const filteredProducts = products.filter(
-  //   (product) => product.category === "chicken"
-  // );
-
   return { products };
 }
 
