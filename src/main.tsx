@@ -8,16 +8,13 @@ import { ErrorRoute } from "./routes/error";
 import { RootRoute } from "./routes/root";
 import { HomeRoute, loader as homeLoader } from "./routes/home";
 import { CartRoute, loader as cartLoader } from "./routes/cart";
-import Chicken from "./pages/Chicken";
+
+import { RecomendationRoute } from "./routes/recommendation";
+import { ChickenRoute } from "./routes/chicken";
 import Drink from "./pages/Drink";
 import Porridge from "./pages/Porridge";
-import RecomendationMenu from "./pages/RecomendationMenu";
 import Seafood from "./pages/Seafood";
 import Soup from "./pages/Soup";
-
-const root = ReactDOM.createRoot(
-  document.getElementById("root") as HTMLElement
-);
 
 const router = createBrowserRouter([
   {
@@ -31,8 +28,12 @@ const router = createBrowserRouter([
         loader: homeLoader,
       },
       {
-        path: "/chickenmenu",
-        element: <Chicken />,
+        path: "/recomendation",
+        element: <RecomendationRoute />,
+      },
+      {
+        path: "/chicken",
+        element: <ChickenRoute />,
       },
       {
         path: "/drinkmenu",
@@ -41,10 +42,6 @@ const router = createBrowserRouter([
       {
         path: "/porridgemenu",
         element: <Porridge />,
-      },
-      {
-        path: "/recomendationmenu",
-        element: <RecomendationMenu />,
       },
       {
         path: "/seafoodmenu",
@@ -62,6 +59,10 @@ const router = createBrowserRouter([
     loader: cartLoader,
   },
 ]);
+
+const root = ReactDOM.createRoot(
+  document.getElementById("root") as HTMLElement
+);
 
 root.render(
   <React.StrictMode>

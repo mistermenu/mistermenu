@@ -12,13 +12,13 @@ export function HeaderNavigation() {
       </div>
       <div className="flex h-56 w-full justify-between bg-slate-400 px-40 py-4">
         <div className=" w-36 rounded-sm  border-[3px] border-gray-200 bg-white text-center shadow-2xl hover:border-red-200 hover:bg-red-200">
-          <Link to="/recomendationmenu">
+          <Link to="/recomendation">
             <img className="p-3" src="/assets/images/Rekomendasi.png" alt="" />
             <h1 className="text-sm font-semibold text-gray-600">REKOMENDASI</h1>
           </Link>
         </div>
         <div className=" w-36 rounded-sm  border-[3px] border-gray-200 bg-white text-center shadow-2xl hover:border-red-200 hover:bg-red-200">
-          <Link to="/chickenmenu">
+          <Link to="/chicken">
             <img className="p-3" src="/assets/images/AYAM.png" alt="" />
             <h1 className="text-sm font-semibold text-gray-600">CHICKEN</h1>
           </Link>
