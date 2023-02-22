@@ -11,7 +11,7 @@ type Products = {
   category: string;
 };
 
-export default function Porridge() {
+export function PorridgeRoute() {
   //state
   const [products, setProducts] = useState<Products[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
