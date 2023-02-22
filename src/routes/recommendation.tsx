@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function RecomendationMenu() {
+export function RecomendationRoute() {
   return <div>Rekomendasi menu disini</div>;
 }

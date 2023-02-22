@@ -8,12 +8,12 @@ import { ErrorRoute } from "./routes/error";
 import { RootRoute } from "./routes/root";
 import { HomeRoute, loader as homeLoader } from "./routes/home";
 import { CartRoute, loader as cartLoader } from "./routes/cart";
-import Chicken from "./pages/Chicken";
-import Drink from "./pages/Drink";
-import Porridge from "./pages/Porridge";
-import RecomendationMenu from "./pages/RecomendationMenu";
-import Seafood from "./pages/Seafood";
-import Soup from "./pages/Soup";
+import { ChickenRoute } from "./routes/chicken";
+import { DrinkRoute } from "./routes/drink";
+import { PorridgeRoute } from "./routes/porridge";
+import { RecomendationRoute } from "./routes/recommendation";
+import { SeafoodRoute } from "./routes/seafood";
+import { SoupRoute } from "./routes/soup";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -31,28 +31,28 @@ const router = createBrowserRouter([
         loader: homeLoader,
       },
       {
-        path: "/chickenmenu",
-        element: <Chicken />,
+        path: "/chicken",
+        element: <ChickenRoute />,
       },
       {
-        path: "/drinkmenu",
-        element: <Drink />,
+        path: "/drink",
+        element: <DrinkRoute />,
       },
       {
-        path: "/porridgemenu",
-        element: <Porridge />,
+        path: "/porridge",
+        element: <PorridgeRoute />,
       },
       {
-        path: "/recomendationmenu",
-        element: <RecomendationMenu />,
+        path: "/recomendation",
+        element: <RecomendationRoute />,
       },
       {
-        path: "/seafoodmenu",
-        element: <Seafood />,
+        path: "/seafood",
+        element: <SeafoodRoute />,
       },
       {
-        path: "/soupmenu",
-        element: <Soup />,
+        path: "/soup",
+        element: <SoupRoute />,
       },
     ],
   },

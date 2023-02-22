@@ -11,7 +11,7 @@ type Products = {
   category: string;
 };
 
-export default function Drink() {
+export function SeafoodRoute() {
   //state
   const [products, setProducts] = useState<Products[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
@@ -22,10 +22,10 @@ export default function Drink() {
       const response = await axios.get(
         "https://mistermenu-api.up.railway.app/products"
       );
-      const baverageProducts = response.data.filter(
-        (product: Products) => product.category === "beverage"
+      const seafoodProducts = response.data.filter(
+        (product: Products) => product.category === "seafood"
       );
-      setProducts(baverageProducts);
+      setProducts(seafoodProducts);
       setLoading(false);
     }
     fetchData();

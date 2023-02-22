@@ -3,11 +3,11 @@ import { apiGetProducts } from "../api/products";
 
 export async function loader() {
   const products = await apiGetProducts();
-  const filteredProducts = products.filter(
-    (product) => product.category === "chicken"
-  );
+  // const filteredProducts = products.filter(
+  //   (product) => product.category === "chicken"
+  // );
 
-  return { products: filteredProducts };
+  return { products };
 }
 
 export function HomeRoute() {
@@ -21,10 +21,14 @@ export function HomeRoute() {
             <img className="rounded-t-xl" src={product.image} />
           </picture>
           <h1 className="mt-4 mb-2 px-4 text-xl font-bold">{product.name}</h1>
-          <p className="px-4 text-sm text-gray-600">{product.description}</p>
-          <p className="px-4 text-xl font-bold text-gray-500">
-            $ {product.price}
-          </p>
+          <div className="my-4 flex justify-between pr-6">
+            <p className="px-4 text-xl font-bold text-gray-500">
+              $ {product.price}
+            </p>
+            <button className="rounded-lg bg-red-800 px-8 text-white">
+              ADD <span className="text-lg font-extrabold">+</span>
+            </button>
+          </div>
         </div>
       ))}
     </div>

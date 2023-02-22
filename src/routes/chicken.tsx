@@ -11,7 +11,7 @@ type Products = {
   category: string;
 };
 
-export default function Chicken() {
+export function ChickenRoute() {
   //state
   const [products, setProducts] = useState<Products[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
