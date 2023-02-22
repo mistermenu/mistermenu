@@ -3,7 +3,7 @@ import { HeaderNavigation } from "../components/header-navigation";
 
 export function RootRoute() {
   return (
-    <>
+    <div className="mx-36 bg-white">
       <HeaderNavigation />
 
       <main>
@@ -13,6 +13,6 @@ export function RootRoute() {
       <footer className="my-5">
         <p>Copyright</p>
       </footer>
-    </>
+    </div>
   );
 }

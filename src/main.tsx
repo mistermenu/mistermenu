@@ -8,6 +8,12 @@ import { ErrorRoute } from "./routes/error";
 import { RootRoute } from "./routes/root";
 import { HomeRoute, loader as homeLoader } from "./routes/home";
 import { CartRoute, loader as cartLoader } from "./routes/cart";
+import Chicken from "./pages/Chicken";
+import Drink from "./pages/Drink";
+import Porridge from "./pages/Porridge";
+import RecomendationMenu from "./pages/RecomendationMenu";
+import Seafood from "./pages/Seafood";
+import Soup from "./pages/Soup";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -23,6 +29,30 @@ const router = createBrowserRouter([
         path: "/",
         element: <HomeRoute />,
         loader: homeLoader,
+      },
+      {
+        path: "/chickenmenu",
+        element: <Chicken />,
+      },
+      {
+        path: "/drinkmenu",
+        element: <Drink />,
+      },
+      {
+        path: "/porridgemenu",
+        element: <Porridge />,
+      },
+      {
+        path: "/recomendationmenu",
+        element: <RecomendationMenu />,
+      },
+      {
+        path: "/seafoodmenu",
+        element: <Seafood />,
+      },
+      {
+        path: "/soupmenu",
+        element: <Soup />,
       },
     ],
   },
