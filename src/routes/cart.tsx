@@ -37,9 +37,7 @@ export function CartHeading() {
               ORDER CART{" "}
               <AiOutlineShoppingCart className="inline text-4xl text-red-mistermenu" />
             </h1>
-            <h4 className="text-sm font-semibold text-gray-400">
-              MISTERMENU @PELAZA INDONESIA
-            </h4>
+            <h4 className="text-sm font-semibold text-gray-400">MISTERMENU</h4>
           </div>
 
           <div></div>
