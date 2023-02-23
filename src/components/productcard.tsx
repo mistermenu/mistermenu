@@ -9,7 +9,7 @@ type CardProp = {
 
 export function ProductCard({ image, name, price }: CardProp) {
   return (
-    <div className="mx-auto max-w-md overflow-hidden rounded-3xl shadow-lg">
+    <div className="rounded-xl border-8 shadow-lg">
       <img className="w-full" src={image} alt={name} />
 
       <div className="px-6 py-4">
@@ -19,7 +19,7 @@ export function ProductCard({ image, name, price }: CardProp) {
           <p className="font-roboto mb-2 text-2xl font-bold text-gray-400 ">
             {formatCurrency(price)}
           </p>
-          <button className="flex items-center gap-1 rounded-lg bg-red-mistermenu px-10 py-2 font-bold text-white hover:bg-red-700">
+          <button className="flex shrink-0 items-center gap-1 rounded-lg bg-red-mistermenu px-10 py-2 font-bold text-white hover:bg-red-700">
             <p>ADD</p>
             <TiPlus className="inline-block text-2xl" />
           </button>
