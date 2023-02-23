@@ -17,13 +17,14 @@ export function ProductCard({ image, name, price }: CardProp) {
           {name}
         </p>
 
-        <div className=" flex w-full flex-wrap items-center justify-between 2xl:flex-row">
-          <p className="font-roboto mb-2 text-lg font-bold text-gray-400 lg:text-lg 2xl:text-2xl ">
+        <div className=" flex flex-wrap items-center justify-between">
+          <p className="font-roboto mb-2 text-lg font-bold text-gray-400 lg:text-base 2xl:text-2xl">
             {formatCurrency(price)}
           </p>
-          <button className="flex items-center gap-1 rounded-lg  bg-red-mistermenu px-10 py-2 font-bold text-white hover:bg-red-700 ">
-            <p>ADD</p>
-            <TiPlus className=" 2xl:text-2xl" />
+
+          <button className="flex items-center gap-1 rounded-lg bg-red-mistermenu  px-4 py-2 font-bold text-white transition duration-300 ease-in-out hover:bg-orange-400 xl:px-20">
+            <p className="text-sm xl:text-base">ADD</p>
+            <TiPlus className=" xl:text-2xl" />
           </button>
         </div>
       </div>
