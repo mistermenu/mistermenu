@@ -1,44 +1,17 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
-import { FaSpinner } from "react-icons/fa";
 import { ProductCard } from "../components/productcard";
+import { apiGetProducts } from "../api/products";
+import { useLoaderData } from "react-router-dom";
 
-type Products = {
-  id: number;
-  name: string;
-  image: string;
-  description: string;
-  price: number;
-  category: string;
-};
+export async function loader() {
+  const products = await apiGetProducts();
+  const filteredProducts = products.filter(
+    (product) => product.category === "chicken"
+  );
+  return { products: filteredProducts };
+}
 
 export function ChickenRoute() {
-  //state
-  const [products, setProducts] = useState<Products[]>([]);
-  const [loading, setLoading] = useState<boolean>(true);
-
-  //component did mount
-  useEffect(() => {
-    async function fetchData() {
-      const response = await axios.get(
-        "https://mistermenu-api.up.railway.app/products"
-      );
-      const chickenProducts = response.data.filter(
-        (product: Products) => product.category === "chicken"
-      );
-      setProducts(chickenProducts);
-      setLoading(false);
-    }
-    fetchData();
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="flex h-screen items-center justify-center">
-        <FaSpinner className="animate-spin text-4xl" />
-      </div>
-    );
-  }
+  const { products } = useLoaderData() as Awaited<ReturnType<typeof loader>>;
 
   return (
     <div className="m-6 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
