@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { FaSpinner } from "react-icons/fa";
+import { ProductCard } from "../components/productcard";
 
 type Products = {
   id: number;
@@ -40,22 +41,14 @@ export function ChickenRoute() {
   }
 
   return (
-    <div className="m-6 grid grid-cols-4 gap-6">
+    <div className="m-6 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       {products.map((product) => (
-        <div className="block rounded-xl shadow-lg" key={product.id}>
-          <picture>
-            <img className="rounded-t-xl" src={product.image} />
-          </picture>
-          <h1 className="mt-4 mb-2 px-4 text-xl font-bold">{product.name}</h1>
-          <div className="my-4 flex justify-between pr-6">
-            <p className="px-4 text-xl font-bold text-gray-500">
-              $ {product.price}
-            </p>
-            <button className="rounded-lg bg-red-800 px-8 text-white">
-              ADD <span className="text-lg font-extrabold">+</span>
-            </button>
-          </div>
-        </div>
+        <ProductCard
+          key={product.id}
+          image={product.image}
+          name={product.name}
+          price={product.price}
+        />
       ))}
     </div>
   );
