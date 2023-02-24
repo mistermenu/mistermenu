@@ -13,7 +13,7 @@ export function ProductDetails() {
 
   return (
     <div className="my-10 flex justify-center">
-      <div className="flex w-full justify-center gap-x-2 rounded-b-md shadow-lg md:gap-x-4 lg:w-1/2 lg:gap-x-10">
+      <div className="mx-1 flex w-full justify-center gap-x-2 rounded-b-md shadow-lg md:gap-x-4 lg:w-1/2 lg:gap-x-10">
         <div className="flex h-48 w-44 items-center justify-center border bg-red-500 md:h-56 md:w-56 lg:h-72 lg:w-72">
           disini gambar
         </div>
@@ -22,10 +22,10 @@ export function ProductDetails() {
             <h1 className="text-sm font-semibold md:text-lg lg:text-xl">
               Lorem ipsum dolor sit amet.
             </h1>
-            <p className="text-mb my-3 font-bold text-red-600 md:text-xl xl:text-3xl">
+            <p className="text-mb my-1 font-bold text-red-600 md:my-2 md:text-xl lg:my-3 xl:text-3xl">
               Rp. 30.000,00
             </p>
-            <article className="xs:text-xs my-2 text-sm md:text-base lg:text-xl">
+            <article className="xs:text-xs my-1 text-sm md:my-3 md:text-base lg:text-lg">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Doloremque corrupti laboriosam numquam vitae dolorem mollitia,
               fugit doloribus nulla excepturi sequi quas debitis odit cumque
@@ -46,7 +46,7 @@ export function ProductDetails() {
               </button>
             </div>
           </div>
-          <button className="h-8 w-1/2 border-2 border-red-500  bg-gray-200 font-sans text-sm font-medium text-red-500 md:text-base lg:my-6 lg:h-12 lg:text-xl">
+          <button className="mb-2 h-8 w-1/2 border-2 border-red-500  bg-gray-200 font-sans text-sm font-medium text-red-500 md:text-base lg:my-6 lg:h-12 lg:text-xl">
             Add To Cart
           </button>
         </div>
