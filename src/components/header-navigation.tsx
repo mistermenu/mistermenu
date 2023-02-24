@@ -13,7 +13,7 @@ export function HeaderNavigation() {
         </div>
       </div>
       <div className="flex w-full justify-center bg-slate-400 py-4">
-        <div className="rounded-sm border-[3px]  border-gray-200 bg-white text-center shadow-2xl hover:border-red-200 hover:bg-red-200">
+        <div className="border-1 border-gray-200 bg-white  text-center shadow-2xl hover:border-red-200 hover:bg-red-200 md:rounded-sm md:border-[3px]">
           <Link to="/recomendation">
             <img className="p-3" src="/assets/images/Rekomendasi.png" alt="" />
             <h1 className="text-xs font-semibold text-gray-600 sm:text-sm md:text-base lg:text-lg">
@@ -21,7 +21,7 @@ export function HeaderNavigation() {
             </h1>
           </Link>
         </div>
-        <div className="rounded-sm border-[3px]  border-gray-200 bg-white text-center shadow-2xl hover:border-red-200 hover:bg-red-200 ">
+        <div className="border-1 border-gray-200 bg-white text-center shadow-2xl hover:border-red-200 hover:bg-red-200 md:rounded-sm md:border-[3px] ">
           <Link to="/chicken">
             <img className="p-3" src="/assets/images/AYAM.png" alt="" />
             <h1 className="text-xs font-semibold text-gray-600 sm:text-sm md:text-base lg:text-lg">
@@ -29,7 +29,7 @@ export function HeaderNavigation() {
             </h1>
           </Link>
         </div>
-        <div className="rounded-sm  border-[3px] border-gray-200 bg-white text-center shadow-2xl hover:border-red-200 hover:bg-red-200">
+        <div className="border-1 border-gray-200 bg-white text-center shadow-2xl hover:border-red-200 hover:bg-red-200 md:rounded-sm md:border-[3px]">
           <Link to="/porridge">
             <img className="p-3" src="/assets/images/BUBUR.png" alt="" />
             <h1 className="text-xs font-semibold text-gray-600 sm:text-sm md:text-base lg:text-lg">
@@ -37,7 +37,7 @@ export function HeaderNavigation() {
             </h1>
           </Link>
         </div>
-        <div className="rounded-sm  border-[3px] border-gray-200 bg-white text-center shadow-2xl hover:border-red-200 hover:bg-red-200">
+        <div className="border-1 border-gray-200 bg-white text-center shadow-2xl hover:border-red-200 hover:bg-red-200 md:rounded-sm md:border-[3px]">
           <Link to="/seafood">
             <img className="p-3" src="/assets/images/SEAFOOD.png" alt="" />
             <h1 className="text-xs font-semibold text-gray-600 sm:text-sm md:text-base lg:text-lg">
@@ -45,7 +45,7 @@ export function HeaderNavigation() {
             </h1>
           </Link>
         </div>
-        <div className="rounded-sm  border-[3px] border-gray-200 bg-white text-center shadow-2xl hover:border-red-200 hover:bg-red-200">
+        <div className="border-1 border-gray-200 bg-white text-center shadow-2xl hover:border-red-200 hover:bg-red-200 md:rounded-sm md:border-[3px]">
           <Link to="/soup">
             <img className="p-3" src="/assets/images/SUP.png" alt="" />
             <h1 className="text-xs font-semibold text-gray-600 sm:text-sm md:text-base lg:text-lg">
@@ -53,7 +53,7 @@ export function HeaderNavigation() {
             </h1>
           </Link>
         </div>
-        <div className="rounded-sm  border-[3px] border-gray-200 bg-white text-center shadow-2xl hover:border-red-200 hover:bg-red-200">
+        <div className="border-1 border-gray-200 bg-white text-center shadow-2xl hover:border-red-200 hover:bg-red-200 md:rounded-sm md:border-[3px]">
           <Link to="/drink">
             <img className="p-3" src="/assets/images/MINUMAN.png" alt="" />
             <h1 className="text-xs font-semibold text-gray-600 sm:text-sm md:text-base lg:text-lg">
