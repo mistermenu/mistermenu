@@ -9,15 +9,15 @@ import { RootRoute } from "./routes/root";
 import { HomeRoute, loader as homeLoader } from "./routes/home";
 import { CartRoute, loader as cartLoader } from "./routes/cart";
 
-import { ChickenRoute } from "./routes/chicken";
+import { ChickenRoute, loader as chickenLoader } from "./routes/chicken";
 import { DrinkRoute, loader as drinkLoader } from "./routes/drink";
-import { PorridgeRoute } from "./routes/porridge";
+import { PorridgeRoute, loader as porridgeLoader } from "./routes/porridge";
 import {
   RecomendationRoute,
   loader as recomendationLoader,
 } from "./routes/recommendation";
-import { SeafoodRoute } from "./routes/seafood";
-import { SoupRoute } from "./routes/soup";
+import { SeafoodRoute, loader as seafoodLoader } from "./routes/seafood";
+import { SoupRoute, loader as soupLoader } from "./routes/soup";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +34,7 @@ const router = createBrowserRouter([
       {
         path: "/chicken",
         element: <ChickenRoute />,
+        loader: chickenLoader,
       },
       {
         path: "/drink",
@@ -43,6 +44,7 @@ const router = createBrowserRouter([
       {
         path: "/porridge",
         element: <PorridgeRoute />,
+        loader: porridgeLoader,
       },
       {
         path: "/recomendation",
@@ -52,10 +54,12 @@ const router = createBrowserRouter([
       {
         path: "/seafood",
         element: <SeafoodRoute />,
+        loader: seafoodLoader,
       },
       {
         path: "/soup",
         element: <SoupRoute />,
+        loader: soupLoader,
       },
     ],
   },

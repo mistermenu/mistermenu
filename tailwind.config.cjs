@@ -9,6 +9,12 @@ module.exports = {
       colors: {
         "red-mistermenu": "#71130B",
       },
+      fontSize: {
+        xs: ["7px", "16px"],
+        sm: ["11px", "16px"],
+        base: ["14px", "24px"],
+        lg: ["16px", "28px"],
+      },
     },
   },
   plugins: [],
