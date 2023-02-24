@@ -2,14 +2,27 @@ import { ProductCard } from "../components/productcard";
 import { apiGetProducts } from "../api/products";
 import { useLoaderData } from "react-router-dom";
 import { Link } from "react-router-dom";
+import Chance from "chance";
+import PropTypes from "prop-types";
 
 export async function loader() {
   const products = await apiGetProducts();
   return { products };
 }
 
-export function RecomendationRoute() {
-  const { products } = useLoaderData() as Awaited<ReturnType<typeof loader>>;
+interface Product {
+  id: string;
+  name: string;
+  image: string;
+  price: number;
+}
+
+export function ProductList({ products }) {
+  const chance = new Chance();
+  const randomProducts = chance.pickset(
+    { products },
+    chance.integer({ min: 1, max: { products }.length })
+  );
 
   return (
     <div className="m-6 grid grid-cols-4 gap-6">
