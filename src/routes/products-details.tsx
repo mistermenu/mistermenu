@@ -13,7 +13,7 @@ export function ProductDetails() {
 
   return (
     <div className="my-10 flex justify-center">
-      <div className="flex w-1/2 justify-evenly gap-x-10">
+      <div className="flex w-1/2 justify-evenly gap-x-10 rounded-b-md shadow-lg">
         <div className="flex h-72 w-72 items-center justify-center border bg-red-500">
           disini gambar
         </div>
