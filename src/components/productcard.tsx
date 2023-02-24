@@ -1,16 +1,20 @@
 import { TiPlus } from "react-icons/ti";
 import { formatCurrency } from "../utilities/formatCurrency";
+import { Link } from "react-router-dom";
 
 type CardProp = {
   image: string;
   name: string;
   price: number;
+  idUrl: string;
 };
 
-export function ProductCard({ image, name, price }: CardProp) {
+export function ProductCard({ image, name, price, idUrl }: CardProp) {
   return (
     <div className=" overflow-hidden rounded-3xl shadow-lg">
-      <img className="w-full" src={image} alt={name} />
+      <Link to={idUrl}>
+        <img className="w-full" src={image} alt={name} />
+      </Link>
 
       <div className="px-6 py-4">
         <p className="text-center text-xl  font-bold lg:text-lg 2xl:mb-2 2xl:text-2xl">

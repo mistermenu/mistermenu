@@ -65,7 +65,7 @@ const router = createBrowserRouter([
         loader: soupLoader,
       },
       {
-        path: "/product/:id",
+        path: "/products/:productId",
         element: <ProductDetails />,
         loader: productDetailsLoader,
       },

@@ -21,13 +21,7 @@ export async function apiGetProducts() {
   return response.data as ResourceProducts;
 }
 
-export async function apiGetRecommendedProducts() {
-  // later will be using /products/recommended
-  const response = await axiosInstance.get("/products");
-  return response.data as ResourceProducts;
-}
-
-export async function apiGetProductsById(productsId: ResourceProduct["id"]) {
-  const response = await axiosInstance.get(`products/${productsId}`);
-  return response.data as ResourceProducts;
+export async function apiGetProductById(productId: ResourceProduct["id"]) {
+  const response = await axiosInstance.get(`/products/${productId}`);
+  return response.data as ResourceProduct;
 }
