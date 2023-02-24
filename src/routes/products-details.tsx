@@ -1,7 +1,4 @@
 import { apiGetProductById } from "../api/products";
-// import { ProductCard } from "../components/productcard";
-// import { Link } from "react-router-dom";
-
 import { LoaderFunctionArgs, useLoaderData } from "react-router-dom";
 
 export async function loader({ params }: LoaderFunctionArgs) {
