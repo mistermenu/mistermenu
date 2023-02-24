@@ -18,7 +18,10 @@ import {
 } from "./routes/recommendation";
 import { SeafoodRoute, loader as seafoodLoader } from "./routes/seafood";
 import { SoupRoute, loader as soupLoader } from "./routes/soup";
-
+import {
+  ProductDetails,
+  loader as productDetailsLoader,
+} from "./routes/products-details";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -61,8 +64,14 @@ const router = createBrowserRouter([
         element: <SoupRoute />,
         loader: soupLoader,
       },
+      {
+        path: "/product/:id",
+        element: <ProductDetails />,
+        loader: productDetailsLoader,
+      },
     ],
   },
+
   {
     path: "/cart",
     element: <CartRoute />,
