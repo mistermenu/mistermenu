@@ -23,7 +23,7 @@ export function RootRoute() {
         </main>
       )}
 
-      <footer className="my-5">
+      <footer className="my-5 text-center">
         <p>Copyright 2023 MisterMenu</p>
       </footer>
     </div>
