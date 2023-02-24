@@ -20,6 +20,7 @@ export function PorridgeRoute() {
         <div key={product.id}>
           <Link to={`/product/${product.name}`}>
             <ProductCard
+              idUrl={`products/${product.id}`}
               image={product.image}
               name={product.name}
               price={product.price}
