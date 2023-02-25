@@ -1,6 +1,7 @@
-import { TiPlus } from "react-icons/ti";
-import { formatCurrency } from "../utilities/formatCurrency";
 import { Link } from "react-router-dom";
+import { TiPlus } from "react-icons/ti";
+
+import { formatCurrency } from "../utilities/formatCurrency";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 
 type CardProps = {
@@ -15,27 +16,27 @@ export function ProductCard({ id, image, name, price, idUrl }: CardProps) {
   const { increaseCartQuantity } = useShoppingCart();
 
   return (
-    <div className=" overflow-hidden rounded-3xl shadow-lg">
+    <div className=" overflow-hidden rounded-lg shadow-lg">
       <Link to={idUrl}>
         <img className="w-full" src={image} alt={name} />
       </Link>
 
       <div className="px-6 py-4">
-        <p className="text-center text-xl  font-bold lg:text-lg 2xl:mb-2 2xl:text-2xl">
-          {name}
-        </p>
+        <p className="text-center text-base font-bold lg:text-xl">{name}</p>
 
         <div className=" flex flex-col items-center justify-between sm:flex-wrap">
-          <p className="font-roboto mb-2 text-lg font-bold text-gray-400 lg:text-base 2xl:text-2xl">
+          <p className="font-roboto mb-2 text-lg font-bold text-gray-500 lg:text-lg">
             {formatCurrency(price)}
           </p>
+        </div>
 
+        <div className="flex justify-center">
           <button
-            className="flex items-center gap-1 rounded-lg bg-red-mistermenu  px-6 py-2 font-bold text-white transition duration-300 ease-in-out hover:bg-orange-400 xl:px-20"
+            className="flex items-center gap-1 rounded-md bg-red-mistermenu px-6 py-2 font-bold text-white transition duration-300 ease-in-out hover:bg-red-900 xl:px-20"
             onClick={() => increaseCartQuantity(id)}
           >
-            <p className="text-sm xl:text-base">ADD</p>
-            <TiPlus className=" xl:text-2xl" />
+            <span>ADD</span>
+            <TiPlus />
           </button>
         </div>
       </div>

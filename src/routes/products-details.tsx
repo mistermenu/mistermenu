@@ -39,7 +39,7 @@ export function ProductDetails() {
             </article>
           </div>
           <div className="mt-3 mb-3 flex justify-start gap-6 text-sm md:text-base lg:mt-6 lg:gap-10 lg:text-xl">
-            <p>Jumlah: </p>
+            <p>Quantity: </p>
             <div className="flex">
               <button
                 onClick={() => decreaseCartQuantity(product.id)}
@@ -61,8 +61,8 @@ export function ProductDetails() {
               <FaRegTrashAlt />
             </button>
           </div>
-          <button className="mb-2 h-8 w-1/2 border-2 border-red-500 bg-gray-200 font-sans text-sm font-medium text-red-500 md:text-base lg:my-6 lg:h-12 lg:text-xl">
-            Add To Cart
+          <button className="mb-2 h-8 w-1/2 rounded-md bg-red-900 text-sm font-medium text-white text-red-500 md:text-base lg:my-6 lg:h-12 lg:text-xl">
+            Add to Cart
           </button>
         </div>
       </div>
