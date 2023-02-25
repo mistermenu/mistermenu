@@ -1,5 +1,6 @@
 import { apiGetProductById } from "../api/products";
 import { LoaderFunctionArgs, useLoaderData } from "react-router-dom";
+import { formatCurrency } from "../utilities/formatCurrency";
 
 export async function loader({ params }: LoaderFunctionArgs) {
   const product = await apiGetProductById(String(params.productId));
@@ -21,7 +22,7 @@ export function ProductDetails() {
               {product.name}
             </h1>
             <p className="text-mb my-1 font-bold text-red-600 md:my-2 md:text-xl lg:my-3 xl:text-3xl">
-              {product.price}
+              {formatCurrency(product.price)}
             </p>
             <article className="xs:text-xs my-1 text-sm md:my-3 md:text-base lg:text-lg">
               {product.description}
