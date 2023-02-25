@@ -12,19 +12,19 @@ export function RootRoute() {
 
   return (
     <ShoppingCartProvider>
-      <div className="bg-white">
+      <div className="flex flex-col bg-white">
         <HeaderNavigation />
         {isLoading && (
-          <main className="flex min-h-[754px] items-center justify-center p-10">
+          <main className="flex justify-center p-10">
             <FaSpinner className="animate-spin text-4xl" />
           </main>
         )}
         {!isLoading && (
-          <main className="min-h-[730px] flex-col">
+          <main className=" justify-center">
             <Outlet />
           </main>
         )}
-        <footer className=" bg-gray-200 p-2	text-center font-newscycle font-bold text-black">
+        <footer className="flex-1 bg-gray-200 p-2	text-center font-newscycle font-bold text-black">
           <FloatingCart />
           <p>
             © Made with ❤️ By{" "}

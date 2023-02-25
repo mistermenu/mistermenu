@@ -6,8 +6,8 @@ export function HeaderNavigation() {
   const { cartQuantity } = useShoppingCart();
 
   return (
-    <header>
-      <div className="flex p-5">
+    <header className="flex-1 border-black">
+      <div className="p-5">
         <div className="mx-auto flex w-full max-w-6xl items-center justify-between">
           <div></div>
           <Link to="/">
