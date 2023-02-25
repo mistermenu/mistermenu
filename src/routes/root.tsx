@@ -1,4 +1,4 @@
-import { Outlet, useNavigation } from "react-router-dom";
+import { Outlet, ScrollRestoration, useNavigation } from "react-router-dom";
 import { FaSpinner } from "react-icons/fa";
 
 import { HeaderNavigation } from "../components/header-navigation";
@@ -10,22 +10,26 @@ export function RootRoute() {
   return (
     <div className="bg-white">
       <HeaderNavigation />
-
       {isLoading && (
         <main className="flex items-center justify-center p-10">
           <FaSpinner className="animate-spin text-4xl" />
         </main>
       )}
-
       {!isLoading && (
         <main>
           <Outlet />
         </main>
       )}
-
-      <footer className="my-5 text-center">
-        <p>Copyright 2023 MisterMenu</p>
+      <footer className="bg-gray-200 p-5 text-center font-newscycle font-bold text-black">
+        <p>
+          © Make with ❤️ By <span className="tracking-widest">MISTERMENU</span>{" "}
+          <span className="bg-gradient-to-b from-violet-200 to-violet-800 bg-clip-text text-transparent">
+            .AI
+          </span>
+        </p>
       </footer>
+
+      <ScrollRestoration />
     </div>
   );
 }

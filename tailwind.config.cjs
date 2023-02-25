@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         rocksalt: ["Rock Salt", "cursive"],
+        newscycle: ["News Cycle", "sans-serif"],
       },
       colors: {
         "red-mistermenu": "#71130B",
