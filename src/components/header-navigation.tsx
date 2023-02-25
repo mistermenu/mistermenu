@@ -1,17 +1,22 @@
+import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 export function HeaderNavigation() {
   return (
     <header>
-      <div className="flex justify-center">
-        <div className=" w-36">
-          <Link to="/">
-            <h1 className="p-5 text-center font-rocksalt text-red-mistermenu ">
-              MisterMenu
-            </h1>
-          </Link>
+      <div className="flex p-5">
+        <div className="mx-auto flex w-full max-w-6xl items-center justify-between">
+          <div></div>
+          <h1 className="font-rocksalt text-red-mistermenu">MisterMenu</h1>
+          <button className="relative flex h-12 w-12 items-center justify-center rounded-lg bg-red-mistermenu transition duration-300 ease-in-out hover:bg-orange-400">
+            <FaShoppingCart className="text-2xl text-white " />
+            <div className="outline-red absolute top-0 right-0 flex h-6 w-6 translate-x-1/4 -translate-y-1/4 items-center justify-center rounded-full bg-gray-400 font-sans text-white outline outline-2">
+              3
+            </div>
+          </button>
         </div>
       </div>
+
       <div className="flex w-full justify-center bg-slate-400 py-4">
         <div className="border-1 border-gray-200 bg-white  text-center shadow-2xl hover:border-red-200 hover:bg-red-200 md:rounded-sm md:border-[3px]">
           <Link to="/recomendation">
