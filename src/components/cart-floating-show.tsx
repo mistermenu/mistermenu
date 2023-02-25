@@ -7,7 +7,7 @@ export function ShowFloatingCart() {
   useEffect(() => {
     function handleScroll() {
       const scrollHeight = document.body.scrollHeight;
-      const scrollPosition = window.innerHeight + window.pageYOffset;
+      const scrollPosition = window.innerHeight + window.scrollY;
       if (scrollPosition >= scrollHeight) {
         setShowFloatingCart(true);
       } else {
