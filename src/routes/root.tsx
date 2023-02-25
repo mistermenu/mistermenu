@@ -22,7 +22,7 @@ export function RootRoute() {
           <Outlet />
         </main>
       )}
-      <footer className="bg-gray-200 p-5 text-center font-newscycle font-bold text-black">
+      <footer className="bg-gray-200 p-5 pb-24 text-center font-newscycle font-bold text-black">
         <FloatingCart />
         <p>
           © Make with ❤️ By <span className="tracking-widest">MISTERMENU</span>{" "}
