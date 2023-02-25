@@ -15,7 +15,7 @@ export function RecomendationRoute() {
   );
 
   return (
-    <div className="m-6 grid grid-cols-4 gap-6">
+    <div className="m-6 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       {recommendedProducts.map((product) => (
         <div key={product.id}>
           <Link to={`/product/${product.name}`}>
