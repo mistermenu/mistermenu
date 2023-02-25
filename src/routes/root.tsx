@@ -15,19 +15,19 @@ export function RootRoute() {
       <div className="bg-white">
         <HeaderNavigation />
         {isLoading && (
-          <main className="flex items-center justify-center p-10">
+          <main className="flex min-h-[754px] items-center justify-center p-10">
             <FaSpinner className="animate-spin text-4xl" />
           </main>
         )}
         {!isLoading && (
-          <main>
+          <main className="min-h-[730px] flex-col">
             <Outlet />
           </main>
         )}
-        <footer className="bg-gray-200 p-5 pb-24 text-center font-newscycle font-bold text-black">
+        <footer className=" bg-gray-200 p-2	text-center font-newscycle font-bold text-black">
           <FloatingCart />
           <p>
-            © Make with ❤️ By{" "}
+            © Made with ❤️ By{" "}
             <span className="tracking-widest">MISTERMENU</span>{" "}
             <span className="bg-gradient-to-b from-violet-200 to-violet-800 bg-clip-text text-transparent">
               .AI

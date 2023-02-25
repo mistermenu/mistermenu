@@ -22,6 +22,7 @@ import {
   ProductDetails,
   loader as productDetailsLoader,
 } from "./routes/products-details";
+
 const router = createBrowserRouter([
   {
     path: "/",
