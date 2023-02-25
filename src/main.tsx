@@ -33,7 +33,6 @@ const router = createBrowserRouter([
         element: <HomeRoute />,
         loader: homeLoader,
       },
-
       {
         path: "/chicken",
         element: <ChickenRoute />,
