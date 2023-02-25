@@ -1,5 +1,5 @@
 import { apiGetProductById } from "../api/products";
-import { LoaderFunctionArgs, useLoaderData } from "react-router-dom";
+import { Link, LoaderFunctionArgs, useLoaderData } from "react-router-dom";
 import { formatCurrency } from "../utilities/formatCurrency";
 import { useShoppingCart } from "../context/ShoppingCartContext";
 import { FaRegTrashAlt } from "react-icons/fa";
@@ -61,9 +61,14 @@ export function ProductDetails() {
               <FaRegTrashAlt />
             </button>
           </div>
-          <button className="mb-2 h-8 w-1/2 border-2 border-red-500 bg-gray-200 font-sans text-sm font-medium text-red-500 md:text-base lg:my-6 lg:h-12 lg:text-xl">
-            Add To Cart
-          </button>
+          <Link to="/cart">
+            <button
+              onClick={() => increaseCartQuantity(product.id)}
+              className="mb-2 h-8 w-1/2 border-2 border-red-500 bg-gray-200 font-sans text-sm font-medium text-red-500 md:text-base lg:my-6 lg:h-12 lg:text-xl"
+            >
+              Add To Cart
+            </button>
+          </Link>
         </div>
       </div>
     </div>
