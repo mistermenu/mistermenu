@@ -5,6 +5,7 @@ import { HeaderNavigation } from "../components/header-navigation";
 
 import { FloatingCart } from "../components/cart-floating";
 import { ShoppingCartProvider } from "../context/ShoppingCartContext";
+import { HeaderMenu } from "../components/header-menu";
 
 export function RootRoute() {
   const navigation = useNavigation();
@@ -13,6 +14,7 @@ export function RootRoute() {
   return (
     <ShoppingCartProvider>
       <div className="bg-white">
+        <HeaderMenu />
         <HeaderNavigation />
         {isLoading && (
           <main className="flex items-center justify-center p-10">
