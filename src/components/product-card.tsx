@@ -21,11 +21,10 @@ export function ProductCard({ id, image, name, price, idUrl }: CardProps) {
         <img className="w-full" src={image} alt={name} />
       </Link>
 
-      <div className="px-6 py-4">
-        <p className="text-center text-base font-bold lg:text-xl">{name}</p>
-
-        <div className=" flex flex-col items-center justify-between sm:flex-wrap">
-          <p className="font-roboto mb-2 text-lg font-bold text-gray-500 lg:text-lg">
+      <div className="space-y-2 px-6 py-4">
+        <div className="space-y-1">
+          <p className="text-center text-base font-bold lg:text-xl">{name}</p>
+          <p className="font-roboto mb-2 text-center text-xl font-bold text-gray-500">
             {formatCurrency(price)}
           </p>
         </div>
@@ -35,7 +34,7 @@ export function ProductCard({ id, image, name, price, idUrl }: CardProps) {
             className="flex items-center gap-1 rounded-md bg-red-mistermenu px-6 py-2 font-bold text-white transition duration-300 ease-in-out hover:bg-red-900 xl:px-20"
             onClick={() => increaseCartQuantity(id)}
           >
-            <span>ADD</span>
+            <span>Add</span>
             <TiPlus />
           </button>
         </div>
