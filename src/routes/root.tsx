@@ -4,12 +4,17 @@ import { FaSpinner } from "react-icons/fa";
 import { HeaderNavigation } from "../components/header-navigation";
 
 import { FloatingCart } from "../components/floating-cart";
+import { ShoppingCartProvider } from "../context/ShoppingCartContext";
 
 export function RootRoute() {
   const navigation = useNavigation();
   const isLoading = navigation.state === "loading";
 
   return (
+
+    <ShoppingCartProvider>
+ 
+
     <div className="bg-white">
       <HeaderNavigation />
       {isLoading && (
@@ -32,7 +37,9 @@ export function RootRoute() {
         </p>
       </footer>
 
-      <ScrollRestoration />
-    </div>
+
+        <ScrollRestoration />
+      </div>
+    </ShoppingCartProvider>
   );
 }

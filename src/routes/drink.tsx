@@ -1,6 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import { apiGetProducts } from "../api/products";
-import { ProductCard } from "../components/productcard";
+import { ProductCard } from "../components/product-card";
 
 export async function loader() {
   const products = await apiGetProducts();

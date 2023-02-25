@@ -1,15 +1,19 @@
 import { TiPlus } from "react-icons/ti";
 import { formatCurrency } from "../utilities/formatCurrency";
 import { Link } from "react-router-dom";
+import { useShoppingCart } from "../context/ShoppingCartContext";
 
-type CardProp = {
+type CardProps = {
+  id: string;
   image: string;
   name: string;
   price: number;
   idUrl: string;
 };
 
-export function ProductCard({ image, name, price, idUrl }: CardProp) {
+export function ProductCard({ id, image, name, price, idUrl }: CardProps) {
+  const { increaseCartQuantity } = useShoppingCart();
+
   return (
     <div className=" overflow-hidden rounded-3xl shadow-lg">
       <Link to={idUrl}>
@@ -26,7 +30,10 @@ export function ProductCard({ image, name, price, idUrl }: CardProp) {
             {formatCurrency(price)}
           </p>
 
-          <button className="flex items-center gap-1 rounded-lg bg-red-mistermenu  px-6 py-2 font-bold text-white transition duration-300 ease-in-out hover:bg-orange-400 xl:px-20">
+          <button
+            className="flex items-center gap-1 rounded-lg bg-red-mistermenu  px-6 py-2 font-bold text-white transition duration-300 ease-in-out hover:bg-orange-400 xl:px-20"
+            onClick={() => increaseCartQuantity(id)}
+          >
             <p className="text-sm xl:text-base">ADD</p>
             <TiPlus className=" xl:text-2xl" />
           </button>

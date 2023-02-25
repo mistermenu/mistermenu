@@ -1,4 +1,4 @@
-import { ProductCard } from "../components/productcard";
+import { ProductCard } from "../components/product-card";
 import { apiGetProducts } from "../api/products";
 import { useLoaderData } from "react-router-dom";
 

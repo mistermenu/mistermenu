@@ -1,7 +1,10 @@
 import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useShoppingCart } from "../context/ShoppingCartContext";
 
 export function HeaderNavigation() {
+  const { cartQuantity } = useShoppingCart();
+
   return (
     <header>
       <div className="flex p-5">
@@ -13,7 +16,7 @@ export function HeaderNavigation() {
           <button className="relative flex h-12 w-12 items-center justify-center rounded-lg bg-red-mistermenu transition duration-300 ease-in-out hover:bg-orange-400">
             <FaShoppingCart className="text-2xl text-white " />
             <div className="outline-red absolute top-0 right-0 flex h-6 w-6 translate-x-1/4 -translate-y-1/4 items-center justify-center rounded-full bg-gray-400 font-sans text-white outline outline-2">
-              3
+              {cartQuantity}
             </div>
           </button>
         </div>
