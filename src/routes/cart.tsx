@@ -32,12 +32,13 @@ export function CartHeading() {
             </Link>
           </div>
 
-          <div>
-            <h1 className=" font-sans text-3xl font-extrabold">
-              ORDER CART{" "}
-              <AiOutlineShoppingCart className="inline text-4xl text-red-mistermenu" />
-            </h1>
-            <h4 className="text-sm font-semibold text-gray-400">MISTERMENU</h4>
+          <div className="flex flex-col items-center">
+            <div className="flex items-center gap-2">
+              <AiOutlineShoppingCart className="inline text-2xl text-red-mistermenu xl:text-4xl" />
+              <h1 className=" font-sans text-2xl font-extrabold xl:text-3xl">
+                ORDER CART{" "}
+              </h1>
+            </div>
           </div>
 
           <div></div>
