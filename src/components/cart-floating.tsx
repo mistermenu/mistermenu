@@ -1,5 +1,3 @@
-import { useLoaderData } from "react-router-dom";
-import { AiOutlineShoppingCart } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 export function FloatingCart() {
