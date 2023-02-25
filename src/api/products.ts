@@ -1,7 +1,7 @@
 import { axiosInstance } from "../libs/axios";
 
 export type ResourceProduct = {
-  id?: string;
+  id: string;
   createdAt?: string;
   updatedAt?: string;
 
