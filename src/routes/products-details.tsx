@@ -11,17 +11,21 @@ export function ProductDetails() {
 
   return (
     <div className="my-10 flex justify-center">
-      <div className="flex w-1/2 justify-evenly gap-x-10 rounded-b-md shadow-lg">
-        <div className="flex h-72 w-72 items-center justify-center border bg-red-500">
-          <img src={product.image} alt={product.name} />
+      <div className="mx-1 flex w-full justify-center gap-x-2 rounded-b-md shadow-lg md:gap-x-4 lg:w-1/2 lg:gap-x-10">
+        <div className="mb-3 flex h-48 w-44 items-center justify-center md:h-56 md:w-56 lg:h-72 lg:w-72">
+          <img src={product.image} alt={product.name} />{" "}
         </div>
-        <div className="w-1/2 bg-white">
+        <div className="mt-2 w-1/2 bg-white">
           <div>
-            <h1 className="text-xl font-semibold">{product.name}</h1>
-            <p className="my-3 text-3xl font-bold text-red-600">
+            <h1 className="text-sm font-semibold md:text-lg lg:text-xl">
               {product.name}
+            </h1>
+            <p className="text-mb my-1 font-bold text-red-600 md:my-2 md:text-xl lg:my-3 xl:text-3xl">
+              {product.price}
             </p>
-            <article className="my-2">{product.description}</article>
+            <article className="xs:text-xs my-1 text-sm md:my-3 md:text-base lg:text-lg">
+              {product.description}
+            </article>
           </div>
           <div className="mt-3 mb-3 flex justify-start gap-6 text-sm md:text-base lg:mt-6 lg:gap-10 lg:text-xl">
             <p>Jumlah: </p>
@@ -37,13 +41,10 @@ export function ProductDetails() {
               </button>
             </div>
           </div>
-          <button className="mb-2 h-8 w-1/2 border-2 border-red-500  bg-gray-200 font-sans text-sm font-medium text-red-500 md:text-base lg:my-6 lg:h-12 lg:text-xl">
+          <button className="mb-2 h-8 w-1/2 border-2 border-red-500 bg-gray-200 font-sans text-sm font-medium text-red-500 md:text-base lg:my-6 lg:h-12 lg:text-xl">
             Add To Cart
           </button>
         </div>
-        {/* <div>
-          <Link to="/">Back to Home</Link>
-        </div> */}
       </div>
     </div>
   );

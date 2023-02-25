@@ -15,7 +15,7 @@ export function HomeRoute() {
       {products.map((product) => (
         <div key={product.id}>
           <ProductCard
-            idUrl={`products/${product.id}`}
+            idUrl={`${product.id}`}
             image={product.image}
             name={product.name}
             price={product.price}

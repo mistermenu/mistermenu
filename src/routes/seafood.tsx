@@ -1,12 +1,11 @@
 import { useLoaderData } from "react-router-dom";
 import { apiGetProducts } from "../api/products";
 import { ProductCard } from "../components/productcard";
-import { Link } from "react-router-dom";
 
 export async function loader() {
   const products = await apiGetProducts();
   const filteredProducts = products.filter(
-    (product) => product.category === "porridge"
+    (product) => product.category === "seafood"
   );
   return { products: filteredProducts };
 }
@@ -18,14 +17,12 @@ export function SeafoodRoute() {
     <div className="m-6 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       {products.map((product) => (
         <div key={product.id}>
-          <Link to={`/product/${product.name}`}>
-            <ProductCard
-              idUrl={`products/${product.id}`}
-              image={product.image}
-              name={product.name}
-              price={product.price}
-            />
-          </Link>
+          <ProductCard
+            idUrl={`${product.id}`}
+            image={product.image}
+            name={product.name}
+            price={product.price}
+          />
         </div>
       ))}
     </div>
