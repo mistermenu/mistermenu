@@ -21,7 +21,7 @@ export function ProductDetails() {
   const quantity = getItemQuantity(product.id);
 
   return (
-    <div className="my-10 flex justify-center">
+    <div className="my-10 mb-40 flex justify-center">
       <div className="mx-1 flex w-full justify-center gap-x-2 rounded-b-md shadow-lg md:gap-x-4 lg:w-1/2 lg:gap-x-10">
         <div className="mb-3 flex h-48 w-44 items-center justify-center md:h-56 md:w-56 lg:h-72 lg:w-72">
           <img src={product.image} alt={product.name} />{" "}
@@ -31,7 +31,7 @@ export function ProductDetails() {
             <h1 className="text-sm font-semibold md:text-lg lg:text-xl">
               {product.name}
             </h1>
-            <p className="text-mb my-1 font-bold text-red-600 md:my-2 md:text-xl lg:my-3 xl:text-3xl">
+            <p className="text-mb my-1 text-2xl font-bold text-red-600 md:my-2 lg:my-3">
               {formatCurrency(product.price)}
             </p>
             <article className="xs:text-xs my-1 text-sm md:my-3 md:text-base lg:text-lg">
@@ -39,7 +39,7 @@ export function ProductDetails() {
             </article>
           </div>
           <div className="mt-3 mb-3 flex justify-start gap-6 text-sm md:text-base lg:mt-6 lg:gap-10 lg:text-xl">
-            <p>Jumlah: </p>
+            <p>Quantity: </p>
             <div className="flex">
               <button
                 onClick={() => decreaseCartQuantity(product.id)}
