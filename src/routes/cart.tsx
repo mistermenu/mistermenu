@@ -1,7 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import { apiGetProducts } from "../api/products";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import { FaChevronLeft } from "react-icons/fa";
+import { FaChevronLeft, FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
@@ -39,19 +39,24 @@ export function Header() {
   const navigate = useNavigate();
 
   return (
-    <header className="flex p-5">
-      <nav className="mx-auto flex w-full max-w-6xl items-center justify-between">
-        <button onClick={() => navigate(-1)}>
-          <FaChevronLeft className="text-3xl" />
-        </button>
-
-        <Link to={"/"}>
-          <h1 className=" font-rocksalt   text-red-mistermenu ">MisterMenu </h1>
+    <div className="flex p-5">
+      <div className="mx-auto flex w-full max-w-6xl items-center justify-between">
+        <div>
+          <button onClick={() => navigate(-1)}>
+            <FaChevronLeft className="text-3xl" />
+          </button>
+        </div>
+        <Link to="/">
+          <h1 className="font-rocksalt text-red-mistermenu">MisterMenu</h1>
         </Link>
-
-        <div></div>
-      </nav>
-    </header>
+        <button className="relative flex h-12 w-12 items-center justify-center rounded-lg bg-red-mistermenu transition duration-300 ease-in-out hover:bg-orange-400">
+          <FaShoppingCart className="text-2xl text-white " />
+          <div className="outline-red absolute top-0 right-0 flex h-6 w-6 translate-x-1/4 -translate-y-1/4 items-center justify-center rounded-full bg-gray-400 font-sans text-white outline outline-2">
+            3
+          </div>
+        </button>
+      </div>
+    </div>
   );
 }
 
