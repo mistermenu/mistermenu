@@ -3,6 +3,8 @@ import { FaSpinner } from "react-icons/fa";
 
 import { HeaderNavigation } from "../components/header-navigation";
 
+import { FloatingCart } from "../components/floating-cart";
+
 export function RootRoute() {
   const navigation = useNavigation();
   const isLoading = navigation.state === "loading";
