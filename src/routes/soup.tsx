@@ -18,6 +18,7 @@ export function SoupRoute() {
       {products.map((product) => (
         <div key={product.id}>
           <ProductCard
+            id={product.id}
             idUrl={`${product.id}`}
             image={product.image}
             name={product.name}
