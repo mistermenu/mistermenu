@@ -16,6 +16,9 @@ module.exports = {
         base: ["14px", "24px"],
         lg: ["16px", "28px"],
       },
+      width: {
+        "49/50": "98%",
+      },
     },
   },
   plugins: [],
