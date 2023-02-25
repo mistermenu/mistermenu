@@ -16,7 +16,7 @@ export function HeaderNavigation() {
                     src="/assets/images/Rekomendasi.png"
                     alt=""
                   />
-                  <h1 className="overflow-x-auto text-lg font-semibold text-gray-600">
+                  <h1 className="text-lg font-semibold text-gray-600">
                     RECOMMENDATION
                   </h1>
                 </div>
