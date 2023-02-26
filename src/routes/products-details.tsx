@@ -21,7 +21,7 @@ export function ProductDetails() {
   const quantity = getItemQuantity(product.id);
 
   return (
-    <div className="my-10 mb-40 flex justify-center">
+    <div className="my-10 mb-44 flex justify-center">
       <div className="mx-1 flex w-full justify-center gap-x-2 rounded-b-md shadow-lg md:gap-x-4 lg:w-1/2 lg:gap-x-10">
         <div className="mb-3 flex h-48 w-44 items-center justify-center md:h-56 md:w-56 lg:h-72 lg:w-72">
           <img src={product.image} alt={product.name} />{" "}
