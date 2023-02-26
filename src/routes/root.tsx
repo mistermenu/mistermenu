@@ -18,18 +18,30 @@ export function RootRoute() {
       <div className="bg-white">
         <HeaderMenu />
         <HeaderNavigation />
+
         {isLoading && (
           <main className="flex items-center justify-center p-10">
             <FaSpinner className="animate-spin text-4xl" />
           </main>
         )}
+
         {!isLoading && (
           <main>
             <Outlet />
           </main>
         )}
-        <ShowFloatingCart />
-        <Footer />
+
+        <footer className="bg-gray-200 p-5 pb-24 text-center font-newscycle font-bold text-black">
+          <FloatingCart />
+          <p>
+            <span>© Made with ❤️ by </span>
+            <span className="tracking-widest">MisterMenu</span>
+            <span className="bg-gradient-to-b from-violet-200 to-violet-800 bg-clip-text text-transparent">
+              .AI
+            </span>
+          </p>
+        </footer>
+
         <ScrollRestoration />
       </div>
     </ShoppingCartProvider>
