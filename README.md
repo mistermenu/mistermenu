@@ -60,7 +60,7 @@ Access demo at:
 - Jeffry
   - Sidebar
 
-⌨️ **Front End Development**
+🧠 **Front End Development**
 
 - Abdehi
   - Main Menu, Header Navigation, Product Details
