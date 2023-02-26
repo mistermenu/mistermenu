@@ -62,10 +62,7 @@ export function ProductDetails() {
             </button>
           </div>
           <Link to="/cart">
-            <button
-              onClick={() => increaseCartQuantity(product.id)}
-              className="mb-2 h-8 w-1/2 border-2 border-red-500 bg-gray-200 font-sans text-sm font-medium text-red-500 md:text-base lg:my-6 lg:h-12 lg:text-xl"
-            >
+            <button className="mb-2 h-8 w-1/2 border-2 border-red-500 bg-gray-200 font-sans text-sm font-medium text-red-500 md:text-base lg:my-6 lg:h-12 lg:text-xl">
               Add To Cart
             </button>
           </Link>
