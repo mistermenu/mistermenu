@@ -43,11 +43,11 @@ Access demo at:
 
 ## Contributors
 
-| Name     | Role                | The Worked Distribution                  | Deployment                                                    |
-| -------- | ------------------- | ---------------------------------------- | ------------------------------------------------------------- |
-| Abdehi   | Front End Developer | `Front End Developer` & `UI/UX Designer` | [@mistermenu/abdehi](https://mistermenu.abdehi.com)           |
-| Jeffry   | Front End Developer | `Front End Developer` & `UI/UX Designer` | [@mistermenu/jeffry](https://mistermenu.jeffrymahbuubi.com)   |
-| Bernhard | Front End Developer | `Front End Developer` & `UI/UX Designer` | [@mistermenu/benhard](https://mistermenu.bernhardhustomo.com) |
+| Name     | Role                | The Worked Distribution                  | Deployment                                                     |
+| -------- | ------------------- | ---------------------------------------- | -------------------------------------------------------------- |
+| Abdehi   | Front End Developer | `Front End Developer` & `UI/UX Designer` | [@mistermenu/abdehi](https://mistermenu.abdehi.com)            |
+| Jeffry   | Front End Developer | `Front End Developer` & `UI/UX Designer` | [@mistermenu/jeffry](https://mistermenu.jeffrymahbuubi.com)    |
+| Bernhard | Front End Developer | `Front End Developer` & `UI/UX Designer` | [@mistermenu/bernhard](https://mistermenu.bernhardhustomo.com) |
 
 ### Contributions Details
 
