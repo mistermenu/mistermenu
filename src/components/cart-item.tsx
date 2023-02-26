@@ -29,22 +29,22 @@ export function CartItem({ id }: CartItemProps) {
 
   return (
     <div>
-      <div className="flex justify-between">
-        <div>
+      <div className="flex  flex-col justify-between sm:flex-row">
+        <div className="mb-2">
           <span className="font-newscycle">{getItemQuantity(id)} pcs x </span>
           <span className="font-newscycle font-light text-black ">
             {item.name}{" "}
           </span>
         </div>
 
-        <div className="flex flex-row items-center gap-6">
+        <div className="mb-4 flex flex-row items-center gap-14 md:mb-2">
           <button
             className="text-xl font-bold"
             onClick={() => removeFromCart(item.id)}
           >
             <FaTrashAlt />
           </button>
-          <div className="flex flex-row items-center gap-12 ">
+          <div className="flex flex-row items-center gap-6 xl:gap-12 ">
             <div className="flex flex-row">
               <button
                 onClick={() => decreaseCartQuantity(id)}
@@ -62,7 +62,7 @@ export function CartItem({ id }: CartItemProps) {
                 +
               </button>
             </div>
-            <div className="text-xl font-bold text-gray-400">
+            <div className="font-bold text-gray-400 xl:text-2xl">
               {formatCurrency(item.price * getItemQuantity(id))}
             </div>
           </div>
