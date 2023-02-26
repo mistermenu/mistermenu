@@ -18,7 +18,7 @@ export function RootRoute() {
         <HeaderNavigation />
 
         {isLoading && (
-          <main className="flex items-center justify-center p-10">
+          <main className="flex h-[32rem] items-center justify-center p-10">
             <FaSpinner className="animate-spin text-4xl" />
           </main>
         )}
