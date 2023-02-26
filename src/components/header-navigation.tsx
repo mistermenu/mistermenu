@@ -1,11 +1,7 @@
-import { FaShoppingCart } from "react-icons/fa";
-import { Link, NavLink } from "react-router-dom";
-import { useShoppingCart } from "../context/ShoppingCartContext";
+import { NavLink } from "react-router-dom";
 
 export function HeaderNavigation() {
   const activeStyle = "bg-red-200 border-red-200";
-
-  const { cartQuantity } = useShoppingCart();
 
   return (
     <header>
