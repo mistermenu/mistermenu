@@ -3,7 +3,7 @@ import { FaSpinner } from "react-icons/fa";
 
 import { HeaderNavigation } from "../components/header-navigation";
 
-import { FloatingCart } from "../components/cart-floating";
+import { ShowFloatingCart } from "../components/cart-floating.show";
 import { ShoppingCartProvider } from "../context/ShoppingCartContext";
 import { HeaderMenu } from "../components/header-menu";
 
@@ -30,7 +30,7 @@ export function RootRoute() {
         )}
 
         <footer className="bg-gray-200 p-5 pb-24 text-center font-newscycle font-bold text-black">
-          <FloatingCart />
+          <ShowFloatingCart />
           <p>
             <span>© Made with ❤️ by </span>
             <span className="tracking-widest">MisterMenu</span>
