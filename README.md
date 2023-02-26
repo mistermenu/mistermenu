@@ -43,14 +43,31 @@ Access demo at:
 
 ## Contributors
 
-- Mister: ...
-- Menu: ...
-
 | Name     | Role                | The Worked Distribution                  | Deployment                                                   |
 | -------- | ------------------- | ---------------------------------------- | ------------------------------------------------------------ |
 | Abdehi   | Front End Developer | `Front End Developer` & `UI/UX Designer` | [@mistermenu/abdehi](https://mistermenu.abdehi.com)          |
 | Jeffry   | Front End Developer | `Front End Developer` & `UI/UX Designer` | [@mistermenu/jeffry](https://mistermenu.jeffrymahbuubi.com)  |
 | Bernhard | Front End Developer | `Front End Developer` & `UI/UX Designer` | [@mistermenu/benhard](https://mistermenu.benhardhustomo.com) |
+
+### Contributions Details
+
+🖌️ **Figma Design**
+
+- Abdehi
+  - Main Menu Page, Menu Header
+- Benhard
+  - Recommendation Page, Order Cart Page
+- Jeffry
+  - Sidebar
+
+⌨️ **Front End Development**
+
+- Abdehi
+  - Main Menu, Header Navigation, Product Details
+- Benhard
+  - Floating Cart, Recommendation
+- Jeffry
+  - Order Cart and Add Products Logic, API Maintainer
 
 ## Issues
 
