@@ -14,6 +14,7 @@ MisterMenu is a web app that is a food menu ordering for restaurant.
   - [Issues](#issues)
   - [Tech Stack](#tech-stack)
   - [How to maintain the API?](#how-to-maintain-the-api)
+  - [Log](#log)
   - [Getting Started](#getting-started)
     - [Commands](#commands)
     - [Deploy](#deploy)
@@ -115,6 +116,10 @@ Access demo at:
 6. Login to [mistermenu hoppscotch](https://hoppscotch.io/)
    1. Go to REST and change the environment from "local" to "production"
    2. Go to Collections and use the `POST` method to send the `.JSON` data.
+
+## Log
+
+@Wednesday, 10 May 2023 - deploy new migration of mistermenu-api by [@jeffrymahbuubi](https://www.linkedin.com/in/jeffrymahbuubi/)
 
 ## Getting Started
 
