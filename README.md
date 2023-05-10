@@ -29,7 +29,7 @@ Access demo at:
 
 - <https://mistermenu.netlify.app>
 - <https://mistermenu.jeffrymahbuubi.com>
-- <https://mistermenu.bernhard.com>
+- <https://mistermenu.bernhardhustomo.com>
 - <https://mistermenu.abdehi.com>
 
 ## Our Design
@@ -50,11 +50,11 @@ Access demo at:
 
 ## Contributors
 
-| Name     | Role                | The Worked Distribution                  | Deployment                                                   |
-| -------- | ------------------- | ---------------------------------------- | ------------------------------------------------------------ |
-| Abdehi   | Front End Developer | `Front End Developer` & `UI/UX Designer` | [@mistermenu/abdehi](https://mistermenu.abdehi.com)          |
-| Jeffry   | Front End Developer | `Front End Developer` & `UI/UX Designer` | [@mistermenu/jeffry](https://mistermenu.jeffrymahbuubi.com)  |
-| Bernhard | Front End Developer | `Front End Developer` & `UI/UX Designer` | [@mistermenu/benhard](https://mistermenu.benhardhustomo.com) |
+| Name     | Role                | The Worked Distribution                  | Deployment                                                     |
+| -------- | ------------------- | ---------------------------------------- | -------------------------------------------------------------- |
+| Abdehi   | Front End Developer | `Front End Developer` & `UI/UX Designer` | [@mistermenu/abdehi](https://mistermenu.abdehi.com)            |
+| Jeffry   | Front End Developer | `Front End Developer` & `UI/UX Designer` | [@mistermenu/jeffry](https://mistermenu.jeffrymahbuubi.com)    |
+| Bernhard | Front End Developer | `Front End Developer` & `UI/UX Designer` | [@mistermenu/bernhard](https://mistermenu.bernhardhustomo.com) |
 
 ### Contributions Details
 
@@ -62,7 +62,7 @@ Access demo at:
 
 - Abdehi
   - Main Menu Page, Menu Header
-- Benhard
+- Bernhard
   - Recommendation Page, Order Cart Page
 - Jeffry
   - Sidebar
@@ -71,7 +71,7 @@ Access demo at:
 
 - Abdehi
   - Main Menu, Header Navigation, Product Details
-- Benhard
+- Bernhard
   - Floating Cart, Recommendation
 - Jeffry
   - Order Cart and Add Products Logic, API Maintainer
