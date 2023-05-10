@@ -5,14 +5,21 @@ MisterMenu is a web app that is a food menu ordering for restaurant.
 <details open>
 <summary> Table of Contents </summary>
 
-- [Demo](#demo)
-- [Our Design](#our-design)
-- [Contributors](#contributors)
-- [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-  - [Commands](#commands)
-  - [Deploy](#deploy)
-- [License](#license)
+- [🍽️ MisterMenu](#️-mistermenu)
+  - [Live URLs](#live-urls)
+  - [Our Design](#our-design)
+  - [REST API](#rest-api)
+  - [Contributors](#contributors)
+    - [Contributions Details](#contributions-details)
+  - [Issues](#issues)
+  - [Tech Stack](#tech-stack)
+  - [How to maintain the API?](#how-to-maintain-the-api)
+  - [Getting Started](#getting-started)
+    - [Commands](#commands)
+    - [Deploy](#deploy)
+      - [Deploy to production (manual)](#deploy-to-production-manual)
+      - [Deploy to Netlify](#deploy-to-netlify)
+  - [License](#license)
 
 </details>
 
@@ -97,6 +104,17 @@ Access demo at:
 ![ExpressJS](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
 ![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)
 ![Railway](https://img.shields.io/badge/Railway-131415?style=for-the-badge&logo=railway&logoColor=white)
+
+## How to maintain the API?
+
+1. `git pull` the [mistermenu-api](https://github.com/mistermenu/mistermenu-api)
+2. Delete the folder "migrations" located inside prisma folder.
+3. run `npm run migrate:reset` and then run `npm run migrate:dev`
+4. Git push the new migration
+5. Check if the new migration process is successfull by accessing [mistermenu-api](https://mistermenu-api.up.railway.app/products)
+6. Login to [mistermenu hoppscotch](https://hoppscotch.io/)
+   1. Go to REST and change the environment from "local" to "production"
+   2. Go to Collections and use the `POST` method to send the `.JSON` data.
 
 ## Getting Started
 
